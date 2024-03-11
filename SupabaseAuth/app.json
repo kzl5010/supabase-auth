@@ -18,6 +18,7 @@
           "launchModeExperimental": "most-recent"
         }
       ],
+      ["expo-apple-authentication"],
       [
         "@react-native-google-signin/google-signin",
         {
@@ -28,7 +29,8 @@
     "assetBundlePatterns": ["**/*"],
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.kenatmotion.SupabaseAuth"
+      "bundleIdentifier": "com.kenatmotion.SupabaseAuth",
+      "usesAppleSignIn": true
     },
     "android": {
       "adaptiveIcon": {
