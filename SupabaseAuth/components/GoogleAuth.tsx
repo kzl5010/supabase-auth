@@ -8,7 +8,8 @@ import { supabase } from "../lib/supabase";
 export default function GoogleAuthButton() {
   GoogleSignin.configure({
     scopes: ["https://www.googleapis.com/auth/drive.readonly"],
-    webClientId: "YOUR CLIENT ID FROM GOOGLE CONSOLE",
+    iosClientId:
+      "1033291577097-qe2o728p91to2m6uhdiu1p2vif4tjmbr.apps.googleusercontent.com",
   });
 
   return (

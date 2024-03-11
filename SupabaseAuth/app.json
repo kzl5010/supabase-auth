@@ -13,6 +13,12 @@
     },
     "plugins": [
       [
+        "expo-dev-launcher",
+        {
+          "launchModeExperimental": "most-recent"
+        }
+      ],
+      [
         "@react-native-google-signin/google-signin",
         {
           "iosUrlScheme": "com.googleusercontent.apps.odin-1530229736486"
@@ -21,13 +27,15 @@
     ],
     "assetBundlePatterns": ["**/*"],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.kenatmotion.SupabaseAuth"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.kenatmotion.SupabaseAuth"
     },
     "web": {
       "favicon": "./assets/favicon.png"
